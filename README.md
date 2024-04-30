@@ -1,6 +1,6 @@
 # `pr05` = “Processing Foundation Software Development Grant”; 
 
-🗓️ _Application Deadline: Friday, May 31, 2024, 11:59 PM EST_ 🗓️
+🟠 🗓️ **Application Deadline:** Friday, May 31, 2024, 11:59 PM EST 🗓️ 🟠
 
 ## Open Call for `pr05` 2024: “New Beginnings”
 
