@@ -2,7 +2,7 @@
 
 🗓️ _Application Deadline: Friday, May 31, 2024, 11:59 PM EST_ 🗓️
 
-## Open Call for 2024 Processing Foundation Software Development Grant `pr05` “New Beginnings”
+## Open Call for `pr05` 2024: “New Beginnings”
 
 The Processing Foundation Software Development Grant or `pr05` (pronounced “pros”) is a new mentorship initiative by the Processing Foundation designed to support the professional growth of early to mid-career software developers through hands-on involvement in open-source projects. Participation in the program is entirely online and we invite developers from around the world to apply. 
 
