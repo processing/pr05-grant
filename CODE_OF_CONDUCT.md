@@ -19,7 +19,7 @@ This means that we:
 
 ## Our Standards
 
-All developers participating in the `pr05` program agree to abide by the following code of conduct.
+All grantees, mentors, advisors, and people involved in the `pr05` program agree to abide by the following code of conduct.
 
 ### Respect other people
 
