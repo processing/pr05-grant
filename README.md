@@ -30,9 +30,6 @@ If you are a programmer, coder, developer, or software engineer and are excited 
 ### Deliverables and Project Legacy
 All `pr05` projects must be open source and contributions should be made as PRs to the Processing Foundation repositories. We encourage applicants to think about how their project will support future developments. This includes, but is not limited to: documentation, developer experience, code commenting and reusability, CI/CD, tests, roadmaps, findings from research performed in the context of the project, etc.
 
-Full payment of the grant is contingent on complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
-
-
 ### Project Documentation
 Progress updates via our social media, blogs, etc., must be posted after each bi-montly progress meeting with the grantee’s mentor.
 
@@ -47,7 +44,7 @@ Mentors are assigned to each Grantee. Mentors are experienced software professio
 We are committed to assembling a diverse and inclusive group of coding professionals. Therefore we particularly encourage applications by individuals from communities historically underrepresented or marginalized in tech fields due to race, gender, class, sexuality, immigration/documentation status, age, geographical location, or disability. Our goal is to assemble a group of grantees that reflects global diversity and brings a variety of perspectives to the development work.
 
 ### Stipend
-The stipend for the 2024 `pr05` grant program is $10,000 USD. Payment of the stipend will be made in four installments: $2,500 USD paid at the start of your project, the remaining split throughout the program, and the remainder upon its completion. A grantee must complete the program requirements for the stipend to be paid in full.
+The stipend for the 2024 `pr05` grant program is $10,000 USD. Payment of the stipend will be made in four installments: $2,500 USD paid at the start of your project, the remaining split throughout the program, and the remainder upon its completion. Full payment of the grant requires complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
 
 ### Program Timeline
 Processing Foundation Grantees are expected to commit 200 hours to proposed projects, between July 1st and November 15th, 2024. The 200 hours must take place during this timeline.
