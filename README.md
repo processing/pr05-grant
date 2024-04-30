@@ -4,7 +4,13 @@
 
 ## Open Call for 2024 Processing Foundation Software Development Grant `pr05` “New Beginnings”
 
-The Processing Foundation Software Development Grant or `pr05` (pronounced “pros”) is a new mentorship initiative by the Processing Foundation designed to support the professional growth of early to mid-career software developers through hands-on involvement in open-source projects. Participation in the program is entirely online and we invite developers from around the world to apply. A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. Full payment is contingent on complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
+The Processing Foundation Software Development Grant or `pr05` (pronounced “pros”) is a new mentorship initiative by the Processing Foundation designed to support the professional growth of early to mid-career software developers through hands-on involvement in open-source projects. Participation in the program is entirely online and we invite developers from around the world to apply. 
+
+A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. Full payment is contingent on complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
+
+Participants will work on self-contained projects that can be completed by one developer under mentorship. This year, we focus on supporting projects that will solidify and expand the foundations of Processing and p5.js. We have a curated list of projects——each mentored by an experienced contributor in this specific area.
+
+📃 See the [2024 `pr05` Project List](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant).
 
 ### Apply now
 To apply for the `pr05` grant, visit [Link Coming Soon], fill out the form, and submit your project proposal by May 31st, 2024, 11:59 PM EST.
@@ -16,19 +22,11 @@ Established in 2012, the Processing Foundation is a nonprofit whose missiong is 
 ### Who is this program for?
 If you are a programmer, coder, developer, or software engineer and are excited about contributing to open-source projects, this program is for you.
 
-### Project focus
-Participants will work on self-contained projects that can be completed by one developer under mentorship. This year, we focus on supporting projects that will solidify and expand the foundations of Processing and p5.js. We have a curated list of projects——each mentored by an experienced contributor in this specific area.
-
-See the [2024 `pr05` Project List](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant).
-
-
 ### Deliverables and Project Legacy
-
 The pr05 projects must be open source and contributions should be made as PRs to the Processing Foundation repositories. We encourage applicants to think about how their project will support future developments. This includes, but is not limited to: documentation, developer experience, code commenting and reusability, CI/CD, tests, roadmaps, findings from research performed in the context of the project, etc.
 
 
 ### Project Documentation
-
 Progress updates via our social media, blogs, etc., must be posted after each bi-montly progress meeting with the fellow’s mentor.
 
 Projects are featured on the Processing Foundation’s website, with the fellow’s bio, images, and a link to the project. These materials must be provided by the start of the fellowship and updated at the end.
