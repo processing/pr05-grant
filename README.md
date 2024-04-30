@@ -13,6 +13,8 @@ Participants will choose from a predefined list of self-contained projects that 
 
 👉 ✨[**2024 `pr05` Project List**](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant)✨ 👈
 
+_Note: While we will prioritize projects from this list, you are welcome to submit a wildcard proposal if you have an exceptional idea that aligns with the grant's objectives. For details, see the page linked above._
+
 ### Apply now
 To apply for the `pr05` grant, visit [Link Coming Soon], fill out the form, and **submit your application by May 31st, 2024, 11:59 PM EST**.
 
