@@ -40,29 +40,16 @@ Projects are featured on the Processing Foundation’s website, with the grantee
 
 A final report documenting the work performed during the program will be required to be submitted as a Pull Request to the appropriate repository in the Processing Foundation’s GitHub. Additional documentation in other formats is also welcome (a series of video tutorials, a website, etc.)
 
-
 ### Mentorship
-
 Mentors are assigned to each Grantee. Mentors are experienced software professionals and/or core contributors from the Processing and p5.js communities. The role of mentors is to provide guidance (creative, technical, and professional), as well as serve as an advocate for the grantee’s work. Grantees are expected to participate in regular virtual meetings with their mentor. Mentors will also be responsible for evaluating the work done by their mentee at the mid-point and at the end of the program.
 
-
 ### Diversity, Equity, Inclusion, and Accessibility (DEIA)
-
 We are committed to assembling a diverse and inclusive group of coding professionals. Therefore we particularly encourage applications by individuals from communities historically underrepresented or marginalized in tech fields due to race, gender, class, sexuality, immigration/documentation status, age, geographical location, or disability. Our goal is to assemble a group of grantees that reflects global diversity and brings a variety of perspectives to the development work.
 
-
-### Possible Uses of Funds
-
-Grantees are free to use the funds to support their work on the program however they need. Here are some possible uses of the grant:
-
-* **Project Tools:** Buying software licenses and hardware needed for development.
-* **Community Events:** Costs for attending meetups or conferences.
-* **Workspaces:** Renting working space for project work.
-* **Living Stipend:** Covering basic living expenses during the program.
-* **Accessibility:** Cost of specialized hardware, software, and other accessibility accommodations
+### Stipend
+The stipend for the 2024 `pr05` grant program is $10,000 USD. Payment of the stipend will be made in four installments: $2,500 USD paid at the start of your project, the remaining split throughout the program, and the remainder upon its completion. A grantee must complete the program requirements for the stipend to be paid in full.
 
 ### Program Timeline
-
 Processing Foundation Grantees are expected to commit 200 hours to proposed projects, between July 1st and November 15th, 2024. The 200 hours must take place during this timeline.
 
 - **Application Opens:** May 1st 2024
