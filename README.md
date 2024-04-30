@@ -27,9 +27,9 @@ The pr05 projects must be open source and contributions should be made as PRs to
 
 
 ### Project Documentation
-Progress updates via our social media, blogs, etc., must be posted after each bi-montly progress meeting with the fellow’s mentor.
+Progress updates via our social media, blogs, etc., must be posted after each bi-montly progress meeting with the grantee’s mentor.
 
-Projects are featured on the Processing Foundation’s website, with the fellow’s bio, images, and a link to the project. These materials must be provided by the start of the fellowship and updated at the end.
+Projects are featured on the Processing Foundation’s website, with the grantee’s bio, images, and a link to the project. These materials must be provided by the start of the program and updated at the end.
 
 A final report documenting the work performed during the program will be required to be submitted as a Pull Request to the appropriate repository in the Processing Foundation’s GitHub. Additional documentation in other formats is also welcome (a series of video tutorials, a website, etc.)
 
@@ -58,13 +58,13 @@ Grantees are free to use the funds to support their work on the program however 
 
 Processing Foundation Grantees are expected to commit 200 hours to proposed projects, between July 1st and November 15th, 2024. The 200 hours must take place during this timeline.
 
-**Application Opens:** May 1st 2024
-**Application Deadline:** May 31st 2024
-**Semi-Finalist Interviews**: Week of June 17th
-**Selected participants announced:** June 21st
-**Program Kick-off:** July 1st 2024
-**Mid-point check-in:** September 1st
-**Program End Date:** October 31st
+- **Application Opens:** May 1st 2024
+- **Application Deadline:** May 31st 2024
+- **Semi-Finalist Interviews**: Week of June 17th
+- **Selected participants announced:** June 21st
+- **Program Kick-off:** July 1st 2024
+- **Mid-point check-in:** September 1st
+- **Program End Date:** October 31st
 
 Agreement regarding additional schedules and milestones is to be decided upon between the Grantee and their mentor (and advisors, if applicable) by the first week of the program. 
 
