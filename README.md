@@ -23,10 +23,6 @@ To apply for the `` grant, visit [Link Coming Soon], fill out the form, and **su
 ### About the Processing Foundation
 Established in 2012, the Processing Foundation is a nonprofit whose missiong is to promote software literacy in the arts and visual literacy in the field of technology. Our efforts also aim to support people of all backgrounds and actively address systemic biases in art and tech spaces, in particular, those related to gender, race, class, and accessibility. To read more about our mission, visit [processingfoundation.org](http://processingfoundation.org). To learn about our activities, go to [processingfoundation.report](https://processingfoundation.report/).
 
-
-### Who is this program for?
-If you are a programmer, coder, developer, or software engineer and are excited about contributing to open-source projects, this program is for you.
-
 ### Deliverables and Project Legacy
 All `pr05` projects must be open source and contributions should be made as PRs to the Processing Foundation repositories. We encourage applicants to think about how their project will support future developments. This includes, but is not limited to: documentation, developer experience, code commenting and reusability, CI/CD, tests, roadmaps, findings from research performed in the context of the project, etc.
 
