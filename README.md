@@ -59,4 +59,4 @@ Agreement regarding additional schedules and milestones is to be decided upon be
 Throughout the program, monthly meetings guided by invited experts will cover critical subjects such as governance, Diversity, Equity, and Inclusion (DEI), UX design, accessibility, or community. These sessions are meant to expand participants' understanding of the broader context in which their technical work resides, ensuring they are well-rounded in both their coding abilities and their comprehension of the ethical and operational frameworks of the software. Town halls are hosted together with our partner program the Processing Fellowship.
 
 ### Questions?
-Please check our [Frequently Asked Questions](https://github.com/processing/pr05-grant/wiki/Frequently-Asked-Questions-about-the-%60pr05%60-grant).
+Please check our [Frequently Asked Questions](https://github.com/processing/pr05-grant/wiki/Frequently-Asked-Questions).
