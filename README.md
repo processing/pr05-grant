@@ -16,7 +16,7 @@ Participants will choose from a predefined list of self-contained projects that 
 _Note: While we will prioritize projects from this list, you are welcome to submit a wildcard proposal if you have an exceptional idea that aligns with the grant's objectives. For details, see the page linked above._
 
 ### Apply now
-To apply for the `pr05` grant, visit [Link Coming Soon], fill out the form, and **submit your application by May 31st, 2024, 11:59 PM EST**.
+To apply for the `` grant, visit [Link Coming Soon], fill out the form, and **submit your application by May 31st, 2024, 11:59 PM EST**.
 
 ### About the Processing Foundation
 Established in 2012, the Processing Foundation is a nonprofit whose missiong is to promote software literacy in the arts and visual literacy in the field of technology. Our efforts also aim to support people of all backgrounds and actively address systemic biases in art and tech spaces, in particular, those related to gender, race, class, and accessibility. To read more about our mission, visit [processingfoundation.org](http://processingfoundation.org). To learn about our activities, go to [processingfoundation.report](https://processingfoundation.report/).
@@ -26,7 +26,7 @@ Established in 2012, the Processing Foundation is a nonprofit whose missiong is 
 If you are a programmer, coder, developer, or software engineer and are excited about contributing to open-source projects, this program is for you.
 
 ### Deliverables and Project Legacy
-The pr05 projects must be open source and contributions should be made as PRs to the Processing Foundation repositories. We encourage applicants to think about how their project will support future developments. This includes, but is not limited to: documentation, developer experience, code commenting and reusability, CI/CD, tests, roadmaps, findings from research performed in the context of the project, etc.
+All `pr05` projects must be open source and contributions should be made as PRs to the Processing Foundation repositories. We encourage applicants to think about how their project will support future developments. This includes, but is not limited to: documentation, developer experience, code commenting and reusability, CI/CD, tests, roadmaps, findings from research performed in the context of the project, etc.
 
 Full payment of the grant is contingent on complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
 
