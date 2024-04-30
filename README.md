@@ -13,7 +13,7 @@ Participants will choose from a predefined list of self-contained projects that 
 📃 See the [2024 `pr05` Project List](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant).
 
 ### Apply now
-To apply for the `pr05` grant, visit [Link Coming Soon], fill out the form, and submit your project proposal by May 31st, 2024, 11:59 PM EST.
+To apply for the `pr05` grant, visit [Link Coming Soon], fill out the form, and **submit your application by May 31st, 2024, 11:59 PM EST**.
 
 ### About the Processing Foundation
 Established in 2012, the Processing Foundation is a nonprofit whose missiong is to promote software literacy in the arts and visual literacy in the field of technology. Our efforts also aim to support people of all backgrounds and actively address systemic biases in art and tech spaces, in particular, those related to gender, race, class, and accessibility. To read more about our mission, visit [processingfoundation.org](http://processingfoundation.org). To learn about our activities, go to [processingfoundation.report](https://processingfoundation.report/).
