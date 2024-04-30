@@ -6,7 +6,7 @@
 
 The Processing Foundation Software Development Grant or `pr05` (pronounced “pros”) is a new mentorship initiative by the Processing Foundation designed to support the professional growth of early to mid-career software developers through hands-on involvement in open-source projects. Participation in the program is entirely online and we invite developers from around the world to apply. 
 
-A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. Full payment is contingent on complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
+A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. 
 
 ### Projects
 Participants will choose from a predefined list of self-contained projects that can be completed under mentorship. We have assembled a curated list of projects selected for their potential to solidify and expand the foundations of Processing and p5.js. Each project will be mentored by a developer/contributor experienced in this specific area.
@@ -25,6 +25,8 @@ If you are a programmer, coder, developer, or software engineer and are excited 
 
 ### Deliverables and Project Legacy
 The pr05 projects must be open source and contributions should be made as PRs to the Processing Foundation repositories. We encourage applicants to think about how their project will support future developments. This includes, but is not limited to: documentation, developer experience, code commenting and reusability, CI/CD, tests, roadmaps, findings from research performed in the context of the project, etc.
+
+Full payment of the grant is contingent on complete and active participation in the program, including cohort meetings, town halls, regular meetings with mentors, and successful evaluations.
 
 
 ### Project Documentation
