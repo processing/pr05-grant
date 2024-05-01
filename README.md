@@ -17,7 +17,7 @@ Participants will choose from a predefined list of self-contained projects that 
 
 _Note: While we will prioritize projects from this list, if you have an exceptional idea that aligns with the grant's objectives, you are welcome to submit a wildcard proposal. For details, see the page linked above._
 
-### ~~Apply now~~ (applications open on May 1st)
+### Apply now
 To apply for the `pr05` grant, visit [Link Coming Soon], fill out the form, and **submit your application by May 31st, 2024, 11:59 PM EST**.
 
 ### About the Processing Foundation
