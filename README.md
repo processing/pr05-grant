@@ -11,7 +11,7 @@ The Processing Foundation Software Development Grant or `pr05` (pronounced “pr
 A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. 
 
 ### Projects
-Participants will choose from a predefined list of self-contained projects that can be completed under mentorship. In the spirit of our first program's theme "New Beginnings", we have assembled a curated list of projects selected for their potential to solidify and expand the foundations of Processing and p5.js. Each project will be mentored by a developer/contributor experienced in this specific area.
+Participants will choose from a predefined list of projects that can be completed under mentorship. In the spirit of our first program's theme "New Beginnings", we have assembled a curated list of projects selected for their potential to solidify and expand the foundations of Processing and p5.js. Each project will be mentored by a developer/contributor experienced in this specific area.
 
 👉 ✨[**2024 `pr05` Project List**](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant)✨ 👈
 
