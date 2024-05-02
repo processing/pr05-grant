@@ -6,7 +6,7 @@ A total of five (5) candidates will be invited to join our 2024 cohort. Selected
 
 👉 ✨ [APPLY HERE](https://pr05.formstack.com/forms/pr05_grant) ✨ 👈
 
-🗓️ **Application Deadline:** Friday, May 31, 2024, 11:59 PM EST 🗓️
+Application Deadline: **Friday, May 31, 2024, 11:59 PM EST** 
 
 <img src="http://i.countdownmail.com/3968cd.gif" style="width:40%;" border="0" alt="countdownmail.com"/>
 
