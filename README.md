@@ -2,7 +2,7 @@
 
 The Processing Foundation Software Development Grant or `pr05` (pronounced “pros”) is a new mentorship initiative by the Processing Foundation designed to support the professional growth of early to mid-career software developers through hands-on involvement in open-source projects. Participation in the program is entirely online and we invite developers from around the world to apply. 
 
-**Applications are closed for this year.** Consider [joining our mailing list](https://processingfoundation.myflodesk.com/newslettersubscription) to be informed of future opportunities.
+**APPLICATIONS ARE CLOSED. THANKS FOR APPLYING.** Consider [joining our mailing list](https://processingfoundation.myflodesk.com/newslettersubscription) to be informed of future opportunities.
 
 A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. 
 
