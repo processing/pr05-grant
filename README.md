@@ -2,13 +2,11 @@
 
 The Processing Foundation Software Development Grant or `pr05` (pronounced “pros”) is a new mentorship initiative by the Processing Foundation designed to support the professional growth of early to mid-career software developers through hands-on involvement in open-source projects. Participation in the program is entirely online and we invite developers from around the world to apply. 
 
+**Applications are closed for this year.** Consider [joining our mailing list](https://processingfoundation.myflodesk.com/newslettersubscription) to be informed of future opportunities.
+
 A total of five (5) candidates will be invited to join our 2024 cohort. Selected candidates will receive a $10,000 grant to allow them to spend 200 hours over a period of 4 months on their contributions. 
 
-👉 ✨ [APPLY HERE](https://pr05.formstack.com/forms/pr05_grant) ✨ 👈
-
-Application Deadline: **Friday, May 31, 2024, 11:59 PM EST** 
-
-<img src="http://i.countdownmail.com/3968cd.gif" style="width:40%;" border="0" alt="countdownmail.com"/>
+<!--<img src="http://i.countdownmail.com/3968cd.gif" style="width:40%;" border="0" alt="countdownmail.com"/>-->
 
 ### “New Beginnings”
 Participants will choose from a predefined list of projects ([2024 `pr05` Project List](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant)) that can be completed under mentorship. In the spirit of our first program's theme "New Beginnings", we have assembled a curated list of projects selected for their potential to solidify and expand the foundations of Processing and p5.js. Each project will be mentored by a developer/contributor experienced in this specific area.
