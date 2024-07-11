@@ -1,0 +1,1 @@
+Monthly reports from the 2024 `pr05` cohort will be stored here.
