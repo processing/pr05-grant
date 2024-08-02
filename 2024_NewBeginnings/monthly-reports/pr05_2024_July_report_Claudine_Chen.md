@@ -12,7 +12,7 @@ Once work on the template is completed at this stage, we will have completed the
 
 The main challenge met in this work was working with Gradle. The documentation has not been clarifying with respect to what plugins specifically do, and I would have to do extra searches to find out how to implement something using Kotlin, the new default and our chosen language, instead of Groovy, the previous long-time standard. Also, I had unexpected difficulties building from the commandline - the commandline build would break for situations that would build successfully from the Gradle menu in Intellij.
 
-Also, in an effort to create a process and resources that is intuitive and address the communities needs, a handful of people have been interviewed thus far about their own experiences developing libraries, which suggests some takeaways:
+Also, in an effort to create a process and resources that are intuitive and address the communities needs, a handful of people have been interviewed thus far about their own experiences developing libraries, which suggests some takeaways:
 - Most people expected documentation for building libraries to be on the website. This is a good idea, because not everyone knows to explore Github for information.
 - People eventually found resources using internet search. The information found and path followed varied by individual. This suggests existing information and resources are fractured and don't lead to predictable outcomes.
 - Needing to go to Processing to test the library grew tiresome after a while. Some would like a way to test library installation within intellij
