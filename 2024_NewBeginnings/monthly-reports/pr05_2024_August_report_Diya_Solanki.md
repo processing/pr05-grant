@@ -33,4 +33,7 @@ By **Diya Solanki**
     - [ ] `onReferences`
     - [ ] `onDefinition`
     - [ ] `...`
-- [ ] `...`
+  
+- [ ] Implement the fully-featured set LSP.
+- [ ] Export the extension into a `.vsix` file and publish it to the [VSCode Market Place](https://marketplace.visualstudio.com/vscode).
+- [ ] Detailed documentation for installing and configuring the extension.
