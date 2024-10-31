@@ -27,9 +27,9 @@ is in the final column.
 
 ## Processing Library Template
 
-This subproject's target was to create an as-intuitive-as-possible Gradle-based library 
+This project's target was to create an as-intuitive-as-possible, Gradle-based library 
 template. The existing `processing-library-template` was based on Ant and Eclipse, 
-both technologies that have been superceded by Gradle and Intellij/VS Code, 
+and both technologies that have been superceded by Gradle and Intellij/VS Code, 
 respectively. The existing `processing-library-template-gradle` seemed to take a 
 design approach of eliminating any interactions by the user with Gradle scripts, 
 opting instead to have the user input all relevant build parameters into a config 
@@ -81,33 +81,39 @@ Some specific differences between the two model templates:
 
 The build.gradle + processing-library.gradle files of the processing template 
 are large, and aren't easy to digest on first look. That's because they are not 
-designed to be edited. Is this a missed opportunity for gaining familiarity with 
-gradle? enkatsu's template is simple, invites and requires editing to configure
-to your library. 
+designed to be edited. enkatsu's template is simple, invites and requires editing 
+to configure to your library. 
 
 ### The New Template
 
-The new template is a Gradle build script, an example library, combined the benefits of the model templates, in the following list:
+The new template is a Gradle build script, an example library, and an example
+documentation website. It combined the benefits of the model templates.
+All features are:
 
-- used jitpack to resolve Processing
-- asks user to edit build file directly, but with helpful comments, to add their own dependencies, library name, domain name, and version.
-- It provides gradle tasks for releasing the library
-- This template provides fully documented example code, and an example library, 
-- The template can be compiled as is. This provides a working example for the contributor to work from. Many people learn from example.
-- It provides a new mkdocs powered documentation website example. This framework provides a simple format suitable for documentation websites, based on markdown files.
-- The template has a workflow that includes the necessary release artifacts, aside from the default for Github, which is the source code
-- 
-
-
-
-
+- use of jitpack to resolve Processing, instead of local jar files. 
+Once Processing is offered on Maven, this will be changed to resolve via 
+official sources.
+- A Gradle build file, that
+  - asks user to edit build file directly,  to add their own 
+dependencies, library name, domain name, and version.
+  - provides gradle tasks for releasing the library and all required artifacts
+  - installs the library in a local Processing instance.
+- The template can be compiled as is. It includes a working example library, and
+defaults that can be compiled. This provides a working example to work from. 
+- This template provides fully documented example code that can be easily accessed
+in Processing from the examples menu.
+- It provides a new mkdocs powered documentation website example. This framework 
+provides a simple format suitable for documentation websites, based on markdown files.
+- The template has a workflow that includes the necessary release artifacts in a Github
+release. The default release artifacts only include the source code.
 
 
 ## Adding a New Contribution
 
 This project's objective was to refactor how Processing tracks contributions, 
-considering the guiding principles. A previously manual process was automated,
-and the contributions data was consolidated into a database file.
+considering the guiding principles of automation and intuitiveness. A previously 
+manual process was automated, and the contributions data was consolidated into 
+a database file.
 
 ### Logic of previous repository
 The previous process required the Processing librarian to add entries to the 
@@ -116,23 +122,24 @@ associated with the contribution. The listing of the source in this file under t
 categories served to override the categories listed in the properties file.
 The new entry included the new id number, and the url of the properties file. 
 A comment at the top tracked what the next id number should be, and was manually 
-iterated. All of the data about the contributions were distributed across multiple 
-files, and no one file contained all of the data about the contributions in plain 
-text. The source of truth for the contributions were the properties files in the
-published libraries themselves, distributed across the internet. 
+iterated. There were also two other configuration files, `skipped.conf` and
+`broken.conf`, which contained lists of id numbers. 
 
-The `scripts/build_contribs.py` script would parse the input files, read in the properties
-files from the internet, and output files used by the website and Contribution Manager
-in the PDE. These files also were a part of the repository.
-
-The `scripts/build_contribs.py` script also performed some alterations to the data in
-the properties files.
+The `scripts/build_contribs.py` script would parse these config files, read in all 
+the properties files from the internet, and output files used by the website and 
+Contribution Manager in the PDE. These files also were a part of the repository.
+The `scripts/build_contribs.py` script performed some alterations to the data in
+the properties files with the following rules.
 
 - if the id was listed in `skipped.conf`, the contribution was not included
 - if the id was listed in `broken.conf`, the contribution's maxRevision field was capped at 228,
 which is a previous version of Processing.
 - the categories the contribution was listed under would overwrite what was listed
 in the properties file.
+
+In short, the data about the contributions were distributed across multiple 
+files, including within algorithms, and across the internet. This does not provide 
+an intuitive interaction with the data. 
 
 
 ### Logic of this project
@@ -145,22 +152,25 @@ data is in memory; just the state is never recorded more permanently. Previous
 formatting logic that was stored as algorithms in the build script are now stored as data. 
 
 The format of the database file was selected to be a list of objects, in yaml format.
-Yaml format allows for ease of understanding any edits in the database over a 
-tabular format, like csv. 
+Yaml format allows for ease of understanding any edits in the database. Each edit
+will appear per line with the field name, making each edit easy to see using Github's 
+interface, compared to tabular formats, like csv. For tabular formats, Github's interface, which shows 
+if a row has an edit, would highlight more which contribution had and edit, but the 
+edit itself would be harder to see, especially since the column label would be on a 
+different line.
 
-The data in the database directly reflect the data in the properties files. This makes it 
-intuitive to compare values in the database against the properties file. The ability to 
-define if a contribution should be listed is set by a new `status` field. If anything needs 
-to be overwritten, like the categories, or maxRevision,  this is defined in the field 
-`override`. 
+To make it intuitive to compare values in the database against the properties file, 
+the data in the database directly reflect the data in the properties files. The visibility
+of a contribution is set by a new `status` field. If anything needs to be overwritten, 
+like the categories, or maxRevision,  this is defined in the field `override`. 
 
-The `status` field reflects if a source url is still serving the library with a 
-value of `VALID`, and we have two states if the url is not valid. `BROKEN` indicates 
-that the url did not serve the properties file as expected, but we will continue 
-to check. This `status` value is automatically set if encountered during an update. 
+For the `status` field, a value of `VALID` indicates the library is live. There are two 
+states if the url is not valid; both of these states result in the library not being
+able to be installed. `BROKEN` indicates that the url did not serve the 
+properties file as expected, but we will continue to check. This `status` value is 
+automatically set if encountered during an update. 
 If we know a library has been deprecated, then we can manually set the `status` to 
-`DEPRECATED` and updates for library will no longer be attempted, but we still 
-have an archive of the library. 
+`DEPRECATED` and updates for library will no longer be attempted. 
 
 The value of the `override` field is an object, where any component field values will 
 replace the existing field values. For example, libraries in the `broken.conf` file are 
@@ -253,7 +263,10 @@ The fields from the `library.properties` file are: `name`, `version`, `prettyVer
    `maxRevision` to `228`. This cap can be applied by setting `override` to {`maxRevision`: `228`}
    * `log` - Any notes of explanation, such as why a library was labeled `BROKEN`
 * Other fields to be included are
-   * `previous_versions` - a list of previous `prettyVersion` values 
-   * `date_added` - Date library was added to contributions. This is a future facing field
-   * `last_updated` - Date library was last updated in the repo. This is a future facing field
+   * `previous_versions` - a list of previous `prettyVersion` values. This is a future facing field.
+   * `date_added` - Date library was added to contributions. This will be added whenever a new library is
+   added. To have complete data for this field will require some detective work into the archives.
+   * `last_updated` - Date library was last updated in the repo. This will be added whenever a library is
+   updated. To have complete data for this field will require waiting for all libraries to be updated, or
+   will require some detective work into the archives.
 
