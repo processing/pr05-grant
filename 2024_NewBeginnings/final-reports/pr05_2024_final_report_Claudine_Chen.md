@@ -1,5 +1,11 @@
 # Final Report for Simplifying the workflow for Processing libraries
 
+| **Project** | [Simplifying the workflow for Processing libraries, tools, and modes](https://github.com/processing/pr05-grant/wiki/2024-Project-List-for-%60pr05%60-=-Processing-Foundation-Software-Development-Grant#%F0%9F%85%BF%EF%B8%8F-simplify-the-workflow-for-processing-libraries-tools-and-modes) | 
+| :--- | :--- |
+| **Grantee** | [Claudine Chen](https://github.com/mingness) |
+| **Mentors** | [Stef Tervelde](https://github.com/Stefterv) |
+| **Repos**| https://github.com/processing/processing-library-template <br> https://github.com/processing/processing-contributions |
+
 ## Introduction
 This project's aim was to improve the developer experience for contributing
 libraries to Processing.
@@ -11,6 +17,8 @@ There were two main guiding principles in this work:
 
 1. automate what can be automated
 2. make the interactions as intuitive and self-explanatory as possible.
+
+The 
 
 ## Project Plan
 Below is a broad overview of the process of contributing to libraries, tools, and modes, and the initial resources for this. The work accomplished or <span style="color: grey">planned</span> to be accomplished
