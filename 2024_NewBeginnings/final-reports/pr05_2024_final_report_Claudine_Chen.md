@@ -183,7 +183,7 @@ The previous process required the new contributor to email the Processing librar
 We have replaced this initial contact with an issue form. The issue form makes it 
 clear as to what is required to register the library, and can be used to trigger workflows. 
 
-## Workflows
+### Workflows
 The creation of the issue form triggers a Github workflow, which automatically
 retrieves the properties file, parses and validates it, and if valid, creates a 
 pull request for the Processing librarian to review. The way the workflow was designed,
