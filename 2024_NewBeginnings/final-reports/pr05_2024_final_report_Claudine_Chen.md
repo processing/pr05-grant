@@ -58,7 +58,7 @@ The previously named `mingness/processing-library-template` is now named
 `processing/processing-library-template`. 
 
 
-All features are:
+Feature list:
 
 - use of jitpack to resolve Processing, instead of local jar files. 
 Once Processing is offered on Maven, this will be changed to resolve via 
@@ -201,7 +201,7 @@ a properties file at the url, the contribution will be marked with a status of `
 until it is live again.
 
 
-# APPENDIX A: The original process for adding contributions
+## APPENDIX A: The original process for adding contributions
 1. The library developer will email the Processing librarian, with the url of the release artifacts.
 2. The librarian will feedback on any recommendations for changes to the library developer.
 3. The librarian adds the library manually to `sources.conf`. This file lists the categories, under 
@@ -221,7 +221,7 @@ contribution. These contributions override the categories listed in the properti
     folder contains json files, one for each contribution. 
 
 
-# APPENDIX B: Design of contributions database file
+## APPENDIX B: Design of contributions database file
 * The file is named `contributions.yaml`
 * All fields from the properties file will be included directly, except for the categories, which will
 be parsed into a list. 
