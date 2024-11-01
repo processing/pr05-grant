@@ -48,7 +48,8 @@ We took a different approach, which is to not protect the user from Gradle, but
 let this be an opportunity to learn how to interact with Gradle. We tried to
 simplify the interaction as much as possible, and to instruct and explain as much
 as possible. In our template, the user will add their library name, domain, and
-dependencies into the Gradle file, guided by comments.
+dependencies into the Gradle file, guided by comments. We also had a principle, to 
+define values only once.
 
 The library template is now integrated into the processing account. 
 The previously named `processing/processing-library-template` is now named
@@ -57,44 +58,6 @@ The previously named `mingness/processing-library-template` is now named
 `processing/processing-library-template`. 
 
 
-### Existing Templates
-There were two existing templates for developing libraries for Processing on 
-Github that were used as initial models:
-- https://github.com/processing/processing-library-template-gradle
-- https://github.com/enkatsu/processing-library-template-gradle
-
-Also notable are these two repositories:
-- https://github.com/hamoid/processing-library-template - used enkatsu's template as a model. used jitpack to resolve Processing
-- https://github.com/jjeongin/creative-machine - library by Jeongin, on of the authors of the processing gradle template
-
-Some specific differences between the two model templates:
-
-- https://github.com/processing/processing-library-template-gradle
-  - The developer interaction for configuring the build is to fill out the 
-    /resources/build.properties file with all build and release parameters
-  - It resolves Processing by pointing to the locally installed jar files
-  - The build.gradle file has 141 lines; processing-library.gradle 159 lines
-  - It provides gradle tasks for releasing the library
-  - This template provides fully documented example code, and an example
-- https://github.com/enkatsu/processing-library-template-gradle
-  - The developer interaction for configuring the build is to add dependencies
-    to the build.gradle
-  - It resolves Processing from Maven, using an unofficial version, 3.3.7
-  - The build.gradle file has 56 lines
-  - It does not provide scripts for releasing the library
-  - This template provides example code and example, but it is not commented 
-    extensively
-
-
-The build.gradle + processing-library.gradle files of the processing template 
-are large, and aren't easy to digest on first look. That's because they are not 
-designed to be edited. enkatsu's template is simple, invites and requires editing 
-to configure to your library. 
-
-### The New Template
-
-The new template is a Gradle build script, an example library, and an example
-documentation website. It combined the benefits of the model templates.
 All features are:
 
 - use of jitpack to resolve Processing, instead of local jar files. 
@@ -105,6 +68,9 @@ official sources.
 dependencies, library name, domain name, and version.
   - provides gradle tasks for releasing the library and all required artifacts
   - installs the library in a local Processing instance.
+- A `release.properties` file, where the user will input values for the library 
+properties text file. All fields are mapped directly, and the `version` in the 
+Gradle build file is mapped to `prettyVersion`.
 - The template can be compiled as is. It includes a working example library, and
 defaults that can be compiled. This provides a working example to work from. 
 - This template provides fully documented example code that can be easily accessed
@@ -121,6 +87,13 @@ This project's objective was to refactor how Processing tracks contributions,
 considering the guiding principles of automation and intuitiveness. A previously 
 manual process was automated, and the contributions data was consolidated into 
 a database file.
+
+The processing contributions repository is now integrated into the processing account. 
+The previously named and private repository `processing/processing-contributions` is now named
+`processing/processing-contributions-legacy`. 
+There is now a repository named `processing/processing-contributions`, which contains
+only the important files of `mingness/processing-contributions-new`.
+
 
 ### Logic of previous repository
 The previous process required the Processing librarian to add entries to the 
@@ -248,7 +221,7 @@ contribution. These contributions override the categories listed in the properti
     folder contains json files, one for each contribution. 
 
 
-# APPENDIX B: Design of database file
+# APPENDIX B: Design of contributions database file
 * The file is named `contributions.yaml`
 * All fields from the properties file will be included directly, except for the categories, which will
 be parsed into a list. 
