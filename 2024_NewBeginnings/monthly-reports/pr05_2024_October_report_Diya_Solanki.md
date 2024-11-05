@@ -44,6 +44,7 @@ By **Diya Solanki**
 - Future goals for the project include:
    - Establish a comprehensive testing strategy with full feature tests, maybe using [vitest](https://vitest.dev/), [example tests](https://github.com/hyperjump-io/json-schema-language-tools/blob/main/language-server/src/features/semantic-tokens.test.ts)
    - Extend Processing's AST and AST-supported features.
-   - Bundling of Processing distribution by creating symlinks for multiple platforms.
+   - Transition from the custom bundling of Processing with symlink creation for multiple platforms to a modular approach by shipping the core and pre-processor as Maven packages(WIP), and offering a comprehensive CLI interface for Processing and its Language Server, significantly reducing the extension size.
+   - Enhance the extension's interface to provide an intuitive experience with labeled icons, separate run/stop toggle buttons for each sketch, and other improvements. Drawing inspiration from Antiboredom's [p5.vscode](https://github.com/antiboredom/p5.vscode).
 
 While VSCode remains one of the most widely used code editors, extending support for this LSP to other editors, including JetBrains, Eclipse, and CodeMirror, can also be a future goal.
