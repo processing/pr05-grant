@@ -68,7 +68,9 @@ As outlined in the project roadmap, the LSP extension has been developed for cro
 The following objectives are prioritized for future contributions to the project:
 - Establish a comprehensive testing strategy with full feature tests.
 - Extend Processing's AST and AST-supported features.
-- Bundling of Processing distribution by creating symlinks for multiple platforms.
+- Bundling of Processing distribution by creating symlinks for multiple platforms (current bundling approach).
+- Transition from the custom bundling of Processing with symlink creation for multiple platforms to a modular approach by shipping the core and pre-processor as Maven packages(WIP), and offering a comprehensive CLI interface for Processing and its Language Server, significantly reducing the extension size.
+- Enhance the extension's interface to provide an intuitive experience with labeled icons, separate run/stop toggle buttons for each sketch, and other improvements. Drawing inspiration from Antiboredom's [p5.vscode](https://github.com/antiboredom/p5.vscode).
 
 While VSCode remains one of the most widely used code editors, extending support for this LSP to other editors, including JetBrains, Eclipse, and CodeMirror, can also be a future goal.
 
