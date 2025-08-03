@@ -1,7 +1,7 @@
 # July Monthly Report: Snapshot Testing for Processing and p5.js
 By **Vaivaswat Dubey**
 
-- [Project Repository: Processing Comparison Engine](https://github.com/diyaayay/processing-comparison-engine/)
+- [Project Repository: Processing Comparison Engine](https://github.com/Vaivaswat2244/processing-comparison-engine/)
 ## Work Accomplished
 
 The main goal this month was to explore and implement integration solutions between NPM and Gradle build systems, while researching containerization alternatives and binary development approaches. Initial work focused on understanding existing integration patterns in the community and evaluating different technological approaches for my specific use case.
