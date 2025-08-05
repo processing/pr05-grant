@@ -2,9 +2,34 @@
 By **Vaivaswat Dubey**
 
 - [Project Repository: Processing Comparison Engine](https://github.com/Vaivaswat2244/processing-comparison-engine/)
+
+## System Architecture and Shared Components
+
+### How the System Works
+
+The proposed architecture centers around a shared comparison engine that both Processing and p5.js can utilize through platform-specific adapters. Rather than forcing either ecosystem to change their existing workflows, each platform maintains its current testing approach while leveraging a common underlying image comparison service.
+
+### Shared Components from p5.js
+
+The core comparison functionality will be extracted from p5.js's existing visual testing infrastructure and packaged as a reusable NPM module:
+
+* **Proven pixelmatch implementation** - The existing pixelmatch algorithm setup that p5.js currently uses for visual regression testing, including all the threshold logic and decision-making around what constitutes a meaningful visual difference.
+
+* **Threshold management system** - The established approach for handling false positives and determining acceptable levels of visual variation, which has already been tested and refined in the p5.js ecosystem.
+
+### Platform-Specific Adapters
+
+Instead of creating a monolithic system, thin adapter layers will handle ecosystem-specific integration:
+
+* **Java adapter for Processing** - Utilizes gradle-npm plugin to interface Processing's Gradle-based build system with the NPM-packaged comparison engine, allowing Processing libraries to perform visual testing without changing their existing build workflows.
+
+* **JavaScript adapter for p5.js** - Works within the existing Vitest testing framework, serving as a bridge between p5.js's current test structure and the shared comparison engine.
+
+This adapter approach ensures that improvements and bug fixes to the core comparison logic benefit both ecosystems, while allowing each platform to evolve their testing approaches independently without breaking the other.
+
 ## Work Accomplished
 
-The main goal this month was to explore and implement integration solutions between NPM and Gradle build systems, while researching containerization alternatives and binary development approaches. Initial work focused on understanding existing integration patterns in the community and evaluating different technological approaches for my specific use case.
+The main goal this month was to explore and implement proof-of-concept integration solutions between NPM and Gradle build systems, while researching containerization alternatives and binary development approaches. These specific approaches were selected based on key design criteria: minimizing contributor friction, maintaining compatibility with existing Processing and p5.js workflows, and enabling shared development efforts between the two ecosystems. Initial work focused on understanding existing integration patterns in the community and evaluating different technological approaches for my specific use case.
 
 ### NPM-Gradle Integration Proof of Concept
 
@@ -60,8 +85,8 @@ Through my research and development work, several important insights emerged:
 
 The plans for next month are focused on two main areas:
 
-1. **Comparison Engine and Testing Infrastructure** - I will continue development of the pixelmatch-based comparison engine which will involve testing it with the images generated in the p5 and processing environment.
+1. **Comparison Engine and Testing Infrastructure** - I will continue development of the pixelmatch-based comparison engine which will involve testing it with the images generated in the p5 and processing environment. This includes establishing tolerance thresholds and acceptance criteria for visual differences, determining what percentage of pixel differences should trigger test failures versus passes, and creating a standardized approach for handling false positives in automated visual testing.
 
-2. **Adapter Development** - I plan to complete the initial implementation of both the processing and p5 adapter which involve building the visual testing infrastructure for both the project. While p5 already uses vitest for the test and visual tests have already been integrated, Processing will require a complete setup from scratch.
+2. **Adapter Development** - I plan to complete the initial implementation of both the processing and p5 adapter which involve building the visual testing infrastructure for both the project. Given that p5.js already uses Vitest and has integrated visual tests, while Processing will require a complete setup from scratch, I will prioritize the Processing adapter development to establish the foundational infrastructure needed for that ecosystem.
 
-In August I will be finishing the comparison engine implementation and will start testing these automated comparison systems with actual Processing and p5 development workflows to ensure they can effectively catch regressions and visual inconsistencies.
+In August I will be finishing the comparison engine implementation and will start testing these automated comparison systems with actual Processing and p5.js development workflows to ensure they can effectively catch regressions and visual inconsistencies.
