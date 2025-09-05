@@ -6,12 +6,12 @@ By **Vaivaswat Dubey**
 
 Building on July's architectural foundation, August focused on implementing the core comparison engine and developing platform-specific adapters. The project has undergone some changes after discussions regarding the inclusion of external dependencies, aiming to avoid them where possible. After further discussion, a significant change was made to the project's approach. For this, the executable binaries option which was introduced earlier was explored in more detail. Finally, after extensive research, instead of creating a modular component used by both p5.js and Processing, a custom comparison algorithm was implemented directly in Kotlin for the Processing environment.
 
-The core architectural components established now include a custom pixelmatch-based comparison engine with threshold management systems implemented in Kotlin for Processing, and the groundwork for a JavaScript adapter that will interface with the p5.js environment without disrupting existing developer workflows.
+The core architectural components established now include a custom pixelmatch-based comparison engine with threshold management systems implemented in Kotlin for Processing and the reporting system involved.
 
 ## Work Accomplished
 
 ### Comparison Engine Implementation
-Successfully completed the core comparison engine implementation. This represents the foundational component that both Processing and p5.js will utilize through their respective adapters, with a new focus on platform-specific implementations. You can have a look at that [here](https://www.npmjs.com/package/visual-regression-engine)
+Successfully completed the core comparison engine implementation. This would have been the foundational component that both Processing and p5.js would have utilized through their respective adapters, with a new focus on platform-specific implementations. You can have a look at that [here](https://www.npmjs.com/package/visual-regression-engine)
 
 **Technical Implementation Details:**
 *   **Pixelmatch integration** - Implemented the proven pixelmatch algorithm, adapting it to work within a package structure that can be consumed. The integration maintains the same threshold logic and decision-making processes that have been tested and refined in the p5.js ecosystem.
@@ -46,7 +46,7 @@ The changing of the project's revised scope involved replacing the `pixelmatch` 
 
 ## Challenges Encountered
 
-The primary technical challenge was the binary development investigation, which consumed significant development time while ultimately proving unviable for this project's requirements. Each binary compilation approach presented unique technical hurdles that made them unsuitable for the contributor-friendly, cross-platform solution needed for Processing and p5.js visual testing.
+The primary technical challenge was the binary development investigation, which consumed significant development time while ultimately proving unviable for this project's requirements. Each binary compilation approach presented unique technical hurdles that made them unsuitable for the contributor-friendly, cross-platform solution needed for Processing visual testing.
 
 Cross-platform testing revealed subtle inconsistencies in image rendering and file system behavior that required platform-specific handling within the adapters, particularly around font rendering differences and color space management between operating systems. Additionally, considerable thought was put into ensuring the Kotlin implementation of the pixelmatch algorithm would be as robust and accurate as its JavaScript counterpart.
 
@@ -56,24 +56,18 @@ Cross-platform testing revealed subtle inconsistencies in image rendering and fi
 
 **Kotlin implementation for Processing allows for dependency-free solution** - Implementing the core comparison logic directly in Kotlin for Processing provided a clean, dependency-free solution that integrates natively with the Processing environment, avoiding the complexities of bridging between NPM and Gradle ecosystems.
 
-**Image comparison threshold tuning is critical** - Automated visual regression testing requires careful threshold configuration to balance sensitivity with practicality. Different types of Processing and p5.js sketches may require different tolerance levels for meaningful regression detection.
+**Image comparison threshold tuning is critical** - Automated visual regression testing requires careful threshold configuration to balance sensitivity with practicality. Different types of Processing sketches may require different tolerance levels for meaningful regression detection.
 
 ## September Plans
 
-September will focus on completing the adapter implementations and beginning comprehensive testing with actual Processing and p5.js development workflows. 
+September will focus on completing the adapter implementations and beginning comprehensive testing with actual Processing development workflows. 
 **Processing Implementation and Reporting:**
 *   Develop comprehensive test suites for the Kotlin implementation to ensure reliability across different image types and scenarios.
 *   Create Processing-specific testing framework integration that leverages the native Kotlin comparison engine.
 *   Design and implement a reporting system for Processing that provides clear visual regression test results and integrates with Processing's development workflow.
 
-**p5.js Adapter Finalization:**
-*   Complete Vitest framework integration with backward compatibility testing.
-*   Implement result reporting that matches existing p5.js visual testing conventions.
-*   Ensure seamless migration path for existing p5.js visual tests.
-
 **Integration Testing and Validation:**
 *   Conduct extensive testing with real-world Processing libraries to validate the adapter functionality and identify integration issues.
-*   Test the comparison engine with diverse p5.js sketches to ensure threshold algorithms work effectively across different visual styles.
 *   Performance optimization and memory usage analysis for both adapters under typical development workflows.
 
-The primary deliverable for September will be fully functional adapters that Processing and p5.js developers can integrate into their existing testing workflows with minimal setup friction, along with comprehensive documentation and migration guides.
+The primary deliverable for September will be fully functional adapters that Processing developers can integrate into their existing testing workflows with minimal setup friction, along with comprehensive documentation and migration guides.
