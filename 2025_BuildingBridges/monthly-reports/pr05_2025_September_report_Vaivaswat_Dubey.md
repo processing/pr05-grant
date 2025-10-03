@@ -25,7 +25,7 @@ Technical Implementation Details:
 - Sketch Isolation: The SketchRunner class provides a controlled environment for executing user sketches. It runs each sketch as its own PApplet instance, captures the final rendered image, and ensures consistent size() and noLoop() settings, which are critical for reproducible visual output.
 - Test Orchestration: The VisualTestRunner class was completed to handle the full testing workflow. It now correctly identifies first-time runs to create a baseline image, loads existing baselines for comparison, and, if a test fails, automatically saves a diff image for debugging purposes. This simplifies the developer's debugging process.
 - Pixel-by-Pixel Comparison: The custom ImageComparator now performs a thorough pixel comparison, using an algorithm that is a functional equivalent of the pixelmatch library. It correctly identifies differences, post-processes them to find clusters of changes, and can intelligently ignore minor, isolated pixel differences or "line shifts" that might occur due to rendering subtleties.
-- Test Suite Automation: The ProcessingTestSuite class was created to automate the execution of multiple tests. It provides a simple API (addTest, runAll) for developers to build and manage their entire suite of visual tests.
+- Simple Test Class: To check the workability of the SketchRunner, whipped up a class containing some basic tests such as different coloured squares and a gradient sketch. In future this will be replaced by `JUnit`. Similar workarounds will be made for the suite execution which is supposed to group selected tests together and then run them as a suite.
 
 ### Integration Testing and Validation
 
