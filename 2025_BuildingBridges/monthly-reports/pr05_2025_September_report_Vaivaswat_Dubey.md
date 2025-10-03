@@ -5,12 +5,12 @@ By **Vaivaswat Dubey**
 [Current Implementation](https://github.com/Vaivaswat2244/processing4/tree/pr05-visualtests/visual-tests)
 
 ## System Architecture Progress
-Following the custom Kotlin implementation of the comparison algorithm in August, the focus for September was on building a complete, integrated visual regression testing framework for the Processing environment. The architecture is now fully realized, with a modular design that encapsulates sketch execution, image comparison, and test result reporting into a cohesive and easy-to-use system.
+Following the custom Kotlin implementation of the comparison algorithm in August, the focus for September was on building a complete, integrated visual regression testing framework for the Processing environment. The architecture now encpsulates sketch execution, image comparison and gives result.
 
 The core components now include:
 
 - VisualTestRunner: The central orchestration class that manages the entire test lifecycle, from capturing a sketch to comparing it against a baseline image and generating a final test result.
-- ImageComparator: The custom, self-contained pixel matching engine that uses a pixelmatch-inspired algorithm implemented entirely in Java/Kotlin, eliminating external dependencies.
+- ImageComparator: The custom, self-contained pixel matching engine that uses a pixelmatch-inspired algorithm implemented entirely in Java, eliminating external dependencies.
 - SketchRunner: A dedicated PApplet instance that manages the execution of a user's sketch in an off-screen buffer, ensuring consistent, repeatable rendering for testing purposes.
 - ProcessingTestSuite: A class for organizing and running multiple tests, simplifying the management of large test suites.
 - BaselineManager and TestExecutor: Utility classes to streamline baseline creation and single-test execution, making it easier for developers to manage their visual tests from the command line.
