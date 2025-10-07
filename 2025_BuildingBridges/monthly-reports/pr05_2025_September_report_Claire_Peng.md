@@ -107,3 +107,9 @@ For the remainder of the month, I worked towards migrating the user controller, 
 - [pr05 Typescript Migration #11: Migrate server/routes folder](https://github.com/processing/p5.js-web-editor/pull/3643)
 - [pr05 Typescript Migration 12: Migrate server files related to emailing/nodemailer](https://github.com/processing/p5.js-web-editor/pull/3658)
 - [pr05 Typescript Migration #13: Migrate the User Model (& API Key schema)](https://github.com/processing/p5.js-web-editor/pull/3672/files)
+
+## Next Steps:
+
+For the remaining time in October, I will focus on completing the User model, and if time allows, I will finish the user preferences redux. Having these two completed would mean that we have an instance of migrating each 'kind' of file on the repo, and enable new contributors to have example code / workflows that they can follow to migrate other portions of the codebase.
+
+During the quiet period, I will focus on writing documentation to explain how to migrate each file instance.
