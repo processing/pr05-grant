@@ -44,14 +44,52 @@ I initially intended to migrate the entire `server/views` folder, but I found th
   - `server/utils/mail.ts`
 - Updating any `default` exports to `named` exports, as per the style of the `client` files.
 
-### Initial migration attempt for User:
+### Initial migration attempt for the User model, routes, controller:
 
-I then attempted to migrate the entire `User` "system" (model, routes, controller), but this proved extremely difficult, as I didn't know much about Mongoose Typescript best practices.
+[I then attempted to migrate the entire `User` "system" (model, routes, controller)](https://github.com/clairep94/p5.js-web-editor/pull/13/files), but this proved extremely difficult, as I didn't know much about Mongoose Typescript best practices. I started migrating the controller file by adding types directly to the `req` and `res` parameters, but I ran into unexpected type errors in the routes file. It turned out that Express expects controllers to use the `RequestHandler` type, with the type parameters defined in the angle brackets to specify things like route params, response body, and request body.
 
-I then worked on migrating some folders that I thought would be easy wins:
+I also did not add unit tests during this initial attempt, so it felt risky as the codebase did not have existing tests for the User model, and only had tests for the API Key portion of the User controller.
 
-- `server/routes`
--
+I felt it was best to re-start and take things much slower, focusing on the User routes, and User model for the remainder of the month, adding tests as I go to ensure that nothing regresses during migration.
+
+### Migrating the Routes folder:
+
+After this pivot, I did a bulk migration of the `server/routes` folder, as I knew these files would not require many changes or need to extract types. One improvement from this work was that upon updating files to `ts`, I was hinted by the IDE to update some outdated syntax for creating a `Router` instance.
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/1.png"/>
+
+While a super small change, a lot of files in the `server` folder have not been actively worked on for several years, and without typescript, we would not have known that this syntax was outdated which may have risked unexpected bugs.
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/2.png"/>
+
+### Migrating the User Model:
+
+I then worked on migrating `server/models/user`. As mentioned this file did not have corresponding unit tests for any of the model methods, so it was risky to migrate without first adding tests. I felt the code organisation could also be improved as the `server/models/user` file also included the `apiKey` schema, which could be moved to its own file for better separation of concerns.
+
+To this end, I:
+
+- Added unit tests for `apiKey` schema methods
+- Added unit tests for `user` model methods, and installed `mongodb-memory-server` which creates an in-memory test mongodb to run tests against locally and on CI
+- Migrated `apiKey` to its on file within `/server/models`
+- Extracted definitions for the `Document` and `Model` types for both `apiKey` and `user`
+
+I found the last step quite challenging, as I had never worked on mongoose with typescript before, and defining types can be quite verbose.
+
+The below is a best-effort at extracting types, which I believe does improve legibility for the codebase and give contributors a way to see definitions at a glance.
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/3.png"/>
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/4.png"/>
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/5.png"/>
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/6.png"/>
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/7.png"/>
+
+<img src="./pr05_2025_September_report_Claire_Peng_images/8.png"/>
+
+For example, we now have a definition for `UserPreferences`, which can then be used as the source of truth for the `client` redux system for user preferences.
 
 ## PR's:
 
