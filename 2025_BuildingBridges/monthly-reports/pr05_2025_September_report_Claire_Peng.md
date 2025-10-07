@@ -91,10 +91,19 @@ The below is a best-effort at extracting types, which I believe does improve leg
 
 For example, we now have a definition for `UserPreferences`, which can then be used as the source of truth for the `client` redux system for user preferences.
 
+### Migrating the User Controller:
+
+For the remainder of the month, I worked towards migrating the user controller, which I will discuss more in detail in October's report upon completion of that file.
+
 ## PR's:
 
-- [pr05 Typescript #8: migrate client/components/Menubar/MenubarSubmenu](https://github.com/processing/p5.js-web-editor/pull/3623)
-
-### Outstanding PRs:
+### Updated from previous month to address feedback & now merged:
 
 - [pr05 Typescript #8: migrate client/components/Menubar/MenubarSubmenu](https://github.com/processing/p5.js-web-editor/pull/3623)
+
+### Current Month PR's - Merged:
+
+- [pr05 Typescript Migration #10: Setup Server TS Dependencies & migrate instance of server file](https://github.com/processing/p5.js-web-editor/pull/3636)
+- [pr05 Typescript Migration #11: Migrate server/routes folder](https://github.com/processing/p5.js-web-editor/pull/3643)
+- [pr05 Typescript Migration 12: Migrate server files related to emailing/nodemailer](https://github.com/processing/p5.js-web-editor/pull/3658)
+- [pr05 Typescript Migration #13: Migrate the User Model (& API Key schema)](https://github.com/processing/p5.js-web-editor/pull/3672/files)
