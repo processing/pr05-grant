@@ -165,6 +165,7 @@ The framework implements a custom pixel-matching algorithm inspired by the prove
 ---
 
 ## Architecture Evolution
+The project's architecture underwent significant evolution based on practical challenges and community feedback:
 
 ### **July: Initial Shared Component Vision**
 **Plan:**  
@@ -231,19 +232,19 @@ The final native implementation provides a **superior developer experience** com
 ## Key Insights and Lessons Learned
 
 1. **Contributor Friction is Critical**  
- Minimize setup complexity over technical elegance.  
+Technical solutions must be evaluated not just on capabilities but on ease of contribution. The native Java implementation requires only JDK installation (already required for Processing development), while the NPM approach would have required Node.js, NPM, and cross-ecosystem knowledge. Lesson: Minimize barrier to entry over technical elegance.  
 
 2. **Headless GUI Applications Are Non-Trivial**  
- GUI frameworks assume interactivity that must be explicitly managed.  
+Running PApplet non-interactively required deep understanding of its lifecycle, threading model, and window management. The "just run it without a window" approach doesn't work. Lesson: GUI frameworks make assumptions about interactivity that must be explicitly managed in automated testing.  
 
 3. **Binary Compilation Has Hidden Costs**  
- Build times, binary sizes, and maintenance issues outweigh benefits.  
+The investigation into Nexe, pkg, and other tools revealed that JavaScript-to-binary compilation is far from mature. Build times, binary sizes, platform inconsistencies, and deprecated toolchains make this approach impractical for most projects. Lesson: Sometimes the "boring" solution (native implementation) is the best solution. 
 
 4. **Threshold Tuning is an Art**  
- Balancing false positives vs. missed regressions requires experimentation.  
+Finding the right balance for MAX_TOTAL_DIFF_PIXELS, MIN_CLUSTER_SIZE, and color tolerance required extensive experimentation with real sketches. Too sensitive = false positives, too lenient = missing real bugs. Lesson: Default thresholds should work for most cases, but allow per-test customization. 
 
 5. **Documentation in Code**  
- Test code should serve as living documentation for contributors.  
+The typography test challenges (white canvas problem) highlighted the need for comprehensive setup examples. Creating font explicitly, setting fill in draw(), using BASELINE alignment - these aren't obvious from Processing documentation. Lesson: Test code serves as documentation; make it exemplary. 
 
 ---
 
